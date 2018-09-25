@@ -162,6 +162,7 @@ if has_linter "eslint"; then
 fi
 
 if has_linter "standard"; then
+  ./node_modules/.bin/standard --version
   if [ -d ./lib ]; then
     echo "Linting package using standard..."
     ./node_modules/.bin/standard "lib/**/*.js"
